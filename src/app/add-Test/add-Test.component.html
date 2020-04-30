@@ -1,0 +1,23 @@
+
+<div class="col-md-6">
+  <h2 class="text-center">Add Test</h2>
+  <form>
+    
+<div>
+  <label for="centreName">CentreName:</label><br>
+ <!-- dropdown -->
+<select  name="centreName" [(ngModel)]="user.centreName">
+  <option *ngFor="let cl of centersList" value={{cl}}>
+        {{cl}}
+    </option>`
+</select>
+</div>
+<br><br>
+    <div class="form-group">
+      <label for="centreName">TestName:</label>
+      <input type="name" [(ngModel)]="user.testName" placeholder="TestName" name="centreName" class="form-control" id="centreName">
+    </div>
+  
+    <button class="btn btn-success" (click)="createTest()"> Submit </button>
+  </form>
+  </div>
